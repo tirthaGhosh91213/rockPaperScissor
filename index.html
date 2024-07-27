@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title">Rock paper Scissor game</h1>
+      <p class="lessmargin">
+      Click on one of the f0llowing to play the game :
+      </p>
+      <p class="lessmargin selectionLine">.......................................................</p>
+      <p class="lessmargin whoWillWon">...........................</p>
+      <div>
+        <button onclick="
+         matche++;
+         document.querySelector('.match').innerText=`Total Matches :- ${matche}`;
+        const userChoiseMsg='You have chose Rock  ';
+        let computerChoise;
+        let randomNumber =Math.random()*3;
+        if(randomNumber>0 && randomNumber<=1){
+          computerChoise = 'Rock';
+        }
+        else if(randomNumber>1&& randomNumber<=2){
+          computerChoise ='Paper';
+        }
+        else{
+          computerChoise = 'Scissor';
+          
+        }
+        let computerChoiseMsg= `Computer choise is ${computerChoise}`;
+      
+      let resultMsg;
+        if(computerChoise==='Scissor'){
+          resultMsg= 'You have won the game';
+          youWon=youWon+1;
+          document.querySelector('.userWon').innerText=`You won :- ${youWon} matches`
+      
+        }
+        else if(computerChoise==='Rock'){
+          resultMsg='Match is tie'
+          MatchTie=MatchTie+1;
+          document.querySelector('.matchTie').innerText=`Match tie :- ${MatchTie}`
+        }
+        else{
+          resultMsg='You have lass the game';
+          comWonMatch=comWonMatch+1;
+          document.querySelector('.copmuterWon').innerText=`Computer won :- ${comWonMatch}  matches `
+        }
+      let result='You have won the game'
+        
+       
+        document.querySelector('.selectionLine').innerHTML=`You have chose Rock and  ${computerChoiseMsg}`
+        document.querySelector('.whoWillWon').innerHTML=`${resultMsg}`
+        document.querySelector('.selectionLine').style.color=`darkblue`
+        document.querySelector('.whoWillWon').style.color=`darkblue`
+        " class="rock">✊ Rock</button>
+
+
+        <button onclick="
+         matche++;
+         document.querySelector('.match').innerText=`Total Matches :- ${matche}`;
+        const UserChoiseMsg='You have chose Paper  ';
+        let ComputerChoise;
+        let RandomNumber =Math.random()*3;
+        if(RandomNumber>0 && RandomNumber<=1){
+          ComputerChoise = 'Rock';
+        }
+        else if(RandomNumber>1&& RandomNumber<=2){
+          ComputerChoise ='Paper';
+        }
+        else{
+          ComputerChoise = 'Scissor';
+        }
+        let  ComputerChoiseMsg= `Computer choise is ${ComputerChoise}`;
+      
+      let ResultMsg;
+        if(ComputerChoise==='Scissor'){
+          ResultMsg= 'You have lass the game';
+          comWonMatch=comWonMatch+1;
+          document.querySelector('.copmuterWon').innerText=`Computer won :- ${comWonMatch}  matches `
+      
+        }
+        else if(ComputerChoise==='Rock'){
+          ResultMsg='You have won the game'
+          youWon=youWon+1;
+          document.querySelector('.userWon').innerText=`You won :- ${youWon} matches`
+        }
+        else{
+          ResultMsg='Match is tie';
+          MatchTie=MatchTie+1;
+          document.querySelector('.matchTie').innerText=`Match tie :- ${MatchTie}`
+        }
+       
+        document.querySelector('.selectionLine').innerHTML=`You have chose Paper and  ${ComputerChoiseMsg}`
+        document.querySelector('.whoWillWon').innerHTML=`${ResultMsg}`
+        document.querySelector('.selectionLine').style.color=`darkblue`
+        document.querySelector('.whoWillWon').style.color=`darkblue`
+        "  class="rock">🖐️ Paper</button>
+
+        <button onclick="
+         matche++;
+         document.querySelector('.match').innerText=`Total Matches :- ${matche}`;
+        const UserchoiseMsg='You have chose Scissor   ';
+        let Computerchoise;
+        let Randomnumber =Math.random()*3;
+        if(Randomnumber>0 && Randomnumber<=1){
+          Computerchoise = 'Rock';
+        }
+        else if(Randomnumber>1&& Randomnumber<=2){
+          Computerchoise ='Paper';
+        }
+        else{
+          Computerchoise = 'Scissor';
+        }
+        let  ComputerchoiseMsg= `Computer choise is ${Computerchoise}`;
+      
+      let Resultmsg;
+        if(Computerchoise==='Scissor'){
+          Resultmsg= 'Match is Tie';
+          MatchTie=MatchTie+1;
+          document.querySelector('.matchTie').innerText=`Match tie :- ${MatchTie}`
+      
+        }
+        else if(Computerchoise==='Rock'){
+          Resultmsg='You have lass the game'
+          comWonMatch=comWonMatch+1;
+          document.querySelector('.copmuterWon').innerText=`Computer won :- ${comWonMatch}  matches `
+
+        }
+        else{
+          Resultmsg='You have won the game';
+          youWon=youWon+1;
+          document.querySelector('.userWon').innerText=`You won :- ${youWon} matches`
+        }
+        
+       
+        document.querySelector('.selectionLine').innerHTML=`You have chose Scissor and  ${ComputerchoiseMsg}`
+        document.querySelector('.whoWillWon').innerHTML=`${Resultmsg}`
+        document.querySelector('.selectionLine').style.color=`darkblue`
+        document.querySelector('.whoWillWon').style.color=`darkblue`
+        "  class="rock">✌️ Scissor</button>
+      </div>
+      <h2 class="match"></h2>
+      <h3 class="lessmargin copmuterWon"></h3>
+      <h3 class="userWon lessmargin" ></h3>
+      <h3 class="matchTie lessmargin"></h3>
+    </div>
+    <script>
+     let matche = 0;
+      document.querySelector('.match').innerText=`Total Matches :- ${matche}`;
+      let comWonMatch = 0;
+      document.querySelector('.copmuterWon').innerText=`Computer won :- ${comWonMatch}  matches `
+      let youWon =0;
+      document.querySelector('.userWon').innerText=`You won :- ${youWon} matches`
+      let MatchTie=0;
+      document.querySelector('.matchTie').innerText=`Match tie :- ${MatchTie}`
+    </script>
+  </body>
+</html>

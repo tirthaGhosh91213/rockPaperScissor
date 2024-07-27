@@ -1,0 +1,45 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+.main{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+  border: 5px solid black;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(14, 212, 120, 0.728), rgba(226, 74, 57, 0.866));
+  padding: 7px;
+}
+.rock {
+  background-color: rgb(58, 160, 58);
+  padding: 10px 15px;
+  color: white;
+  outline: none;
+  border-radius: 7px;
+  margin: 10px;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgb(39, 202, 39);
+}
+.rock:active {
+  background-color: rgb(202, 84, 84);
+}
+
+.rock:hover {
+  background-color: rgb(61, 244, 61);
+  color: black;
+  box-shadow: rgb(155, 201, 61);
+}
+.title{
+  text-shadow: 2px 3px 3px rgb(94, 92, 92);
+
+}
+.match{
+  text-shadow: 2px 3px 3px rgb(99, 97, 97);
+}
+.lessmargin{
+  margin: 7px;
+}
